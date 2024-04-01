@@ -1,5 +1,6 @@
 import React from 'react';
 import Divider from '@mui/material/Divider';
+import { useTheme } from '@mui/material/styles';
 
 import Main from 'layouts/Main';
 import Container from 'components/Container';
@@ -11,11 +12,26 @@ import {
   WhoWeAre,
   Application,
 } from './components';
+import { Box } from '@mui/material';
 
 const About = () => {
+  const theme = useTheme();
+
   return (
     <Main colorInvert={true}>
-      <Hero />
+      <Box
+        sx={{
+          position: 'relative',
+          backgroundColor: theme.palette.alternate.main,
+          backgroundImage: `linear-gradient(120deg, ${theme.palette.alternate.dark} 0%, ${theme.palette.background.paper} 100%)`,
+          marginTop: -13,
+          paddingTop: 13,
+        }}
+      >
+        <Container>
+          <Hero />
+        </Container>
+      </Box>
       <Container>
         <Story />
       </Container>
