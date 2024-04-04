@@ -6,7 +6,6 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 
-import Image from 'next/image';
 import { Avatar, ListItem, ListItemAvatar, ListItemText } from '@mui/material';
 
 const WhoWeAre = () => {

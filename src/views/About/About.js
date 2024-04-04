@@ -4,14 +4,7 @@ import { useTheme } from '@mui/material/styles';
 
 import Main from 'layouts/Main';
 import Container from 'components/Container';
-import {
-  Contact,
-  Hero,
-  Story,
-  Team,
-  WhoWeAre,
-  Application,
-} from './components';
+import { Contact, Hero, Story, Team, WhoWeAre } from './components';
 import { Box } from '@mui/material';
 
 const About = () => {
