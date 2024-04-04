@@ -48,7 +48,8 @@ const GetStarted = () => {
           color="primary"
           size="large"
           fullWidth={isMd ? false : true}
-          href={'/home'}
+          target="_blank"
+          href={'https://forms.gle/2RyRsCNjRMhG7TMp6'}
         >
           Contact Us
         </Button>

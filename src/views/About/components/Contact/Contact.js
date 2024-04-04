@@ -13,7 +13,7 @@ import Container from 'components/Container';
 const mock = [
   {
     label: 'Phone',
-    value: '+39 659-657-0133',
+    value: '+1 (469) 546-5847',
     icon: (
       <svg
         width={20}
@@ -28,7 +28,7 @@ const mock = [
   },
   {
     label: 'Email',
-    value: 'hi@maccarianagency.com',
+    value: 'legitwavetechsolutins@gmail.com',
     icon: (
       <svg
         width={20}
@@ -44,7 +44,7 @@ const mock = [
   },
   {
     label: 'Address',
-    value: 'Via Venini 33, 20147',
+    value: '6619 Deleon St, Irving, Texas-75039',
     icon: (
       <svg
         width={20}
@@ -124,12 +124,12 @@ const Contact = () => {
         marginHeight={0}
         marginWidth={0}
         scrolling="no"
-        src="https://maps.google.com/maps?width=100%&height=100%&hl=en&q=Milan&ie=UTF8&t=&z=14&iwloc=B&output=embed"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3349.9899538791738!2d-96.94742942429225!3d32.89843387361311!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c283d26ce8d7f%3A0x95a11008c6a7ff60!2s6619%20DeLeon%20St%2C%20Irving%2C%20TX%2075039%2C%20USA!5e0!3m2!1sen!2sin!4v1712233031551!5m2!1sen!2sin"
         style={{
           minHeight: 300,
           filter:
             theme.palette.mode === 'dark'
-              ? 'grayscale(0.5) opacity(0.7)'
+              ? 'grayscale(0.2) opacity(0.9)'
               : 'none',
         }}
       />

@@ -1,6 +1,3 @@
-.hero {
-  background-image: url(https://cdn-www.dora.run/__dora__/morpheus/static/images/ai/bg-first.webp);
-  background-size: cover;
-  background-position: center;
-  background-repeat: repeat-y;
+html {
+  scroll-behavior: smooth;
 }

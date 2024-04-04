@@ -47,9 +47,9 @@ const About = () => {
 
       <Contact />
 
-      <Container maxWidth={800}>
+      {/* <Container maxWidth={800}>
         <Application />
-      </Container>
+      </Container> */}
     </Main>
   );
 };

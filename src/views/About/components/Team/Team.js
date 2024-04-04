@@ -12,34 +12,34 @@ import ListItemAvatar from '@mui/material/ListItemAvatar';
 
 const mock = [
   {
-    name: 'Clara Bertoletti',
-    title: 'MUI lover',
-    avatar: 'https://assets.maccarianagency.com/avatars/img4.jpg',
+    name: 'Asha',
+    title: 'IT Consultant',
+    avatar: 'https://api.dicebear.com/8.x/adventurer/svg?seed=img4',
   },
   {
     name: 'Jhon Anderson',
     title: 'Senior Frontend Developer',
-    avatar: 'https://assets.maccarianagency.com/avatars/img5.jpg',
+    avatar: 'https://api.dicebear.com/8.x/adventurer/svg?seed=Molly',
   },
   {
-    name: 'Chary Smith',
-    title: 'SEO at Comoti',
-    avatar: 'https://assets.maccarianagency.com/avatars/img6.jpg',
+    name: 'Anand',
+    title: 'Senior Software Engineer',
+    avatar: 'https://api.dicebear.com/8.x/adventurer/svg?seed=Sophie',
   },
   {
-    name: 'Clara Bertoletti',
-    title: 'MUI lover',
-    avatar: 'https://assets.maccarianagency.com/avatars/img1.jpg',
+    name: 'Venkat',
+    title: 'Project Manager',
+    avatar: 'https://api.dicebear.com/8.x/adventurer/svg?seed=Harley',
   },
   {
     name: 'Jhon Anderson',
     title: 'Senior Frontend Developer',
-    avatar: 'https://assets.maccarianagency.com/avatars/img2.jpg',
+    avatar: 'https://api.dicebear.com/8.x/adventurer/svg?seed=Gizmo',
   },
   {
-    name: 'Chary Smith',
-    title: 'SEO at Comoti',
-    avatar: 'https://assets.maccarianagency.com/avatars/img3.jpg',
+    name: 'Priya',
+    title: 'SEO Specialist',
+    avatar: 'https://api.dicebear.com/8.x/adventurer/svg?seed=Leo',
   },
 ];
 

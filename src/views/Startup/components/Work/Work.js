@@ -4,6 +4,7 @@ import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import { useTheme } from '@mui/material/styles';
+import Link from 'next/link';
 
 const mock = [
   {
@@ -66,25 +67,27 @@ const Work = () => {
           will walk you through our smooth and simple process.
         </Typography>
         <Box marginTop={2} display={'flex'} justifyContent={'center'}>
-          <Button
-            color={'primary'}
-            variant={'contained'}
-            size={'large'}
-            startIcon={
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                width={20}
-                height={20}
-              >
-                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-              </svg>
-            }
-          >
-            Contact us
-          </Button>
+          <Link href={'/contact-page'}>
+            <Button
+              color={'primary'}
+              variant={'contained'}
+              size={'large'}
+              startIcon={
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  width={20}
+                  height={20}
+                >
+                  <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                  <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                </svg>
+              }
+            >
+              Contact us
+            </Button>
+          </Link>
         </Box>
       </Box>
       <Grid container spacing={4}>
@@ -113,30 +116,32 @@ const Work = () => {
                 <Typography color="text.secondary">
                   {item.description}
                 </Typography>
-                <Button
-                  size={'large'}
-                  sx={{ marginTop: 2 }}
-                  endIcon={
-                    <Box
-                      component={'svg'}
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      width={24}
-                      height={24}
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M17 8l4 4m0 0l-4 4m4-4H3"
-                      />
-                    </Box>
-                  }
-                >
-                  Learn more
-                </Button>
+                <Link href={'/about'}>
+                  <Button
+                    size={'large'}
+                    sx={{ marginTop: 2 }}
+                    endIcon={
+                      <Box
+                        component={'svg'}
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        width={24}
+                        height={24}
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M17 8l4 4m0 0l-4 4m4-4H3"
+                        />
+                      </Box>
+                    }
+                  >
+                    Learn more
+                  </Button>
+                </Link>
               </Box>
             </Grid>
             <Grid

@@ -10,6 +10,7 @@ import Grid from '@mui/material/Grid';
 import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 import ListItemAvatar from '@mui/material/ListItemAvatar';
+import { Link } from '@mui/material';
 
 const Process = () => {
   const theme = useTheme();
@@ -95,9 +96,11 @@ const Process = () => {
                     laws.
                   </Typography>
                 </Box>
-                <Button size={'large'} variant={'contained'}>
-                  Learn more
-                </Button>
+                <Link href={'/about'}>
+                  <Button size={'large'} variant={'contained'}>
+                    Learn more
+                  </Button>
+                </Link>
               </Box>
             </Grid>
           </Grid>

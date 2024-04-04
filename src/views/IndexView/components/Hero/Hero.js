@@ -3,12 +3,13 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import useMediaQuery from '@mui/material/useMediaQuery';
-import { alpha, useTheme } from '@mui/material/styles';
+import { useTheme } from '@mui/material/styles';
 
 import Container from 'components/Container';
 import { useEffect, useMemo, useState } from 'react';
 import Particles, { initParticlesEngine } from '@tsparticles/react';
 import { loadSlim } from '@tsparticles/slim';
+import Link from 'next/link';
 const Hero = () => {
   const [init, setInit] = useState(false);
 
@@ -104,14 +105,13 @@ const Hero = () => {
     <Box
       sx={{
         position: 'relative', // Set position relative
-        backgroundImage: `linear-gradient(to bottom, ${alpha(
-          theme.palette.background.paper,
-          0,
-        )}, ${alpha(theme.palette.alternate.main, 1)} 100%)`,
-        backgroundRepeat: 'repeat-x',
+        backgroundRepeat: 'repeat-y',
         backgroundColor: mode === 'light' ? '#f8f9fb' : '#111',
+        backgroundImage:
+          'url(https://cdn-www.dora.run/__dora__/morpheus/static/images/ai/bg-first.webp)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
       }}
-      className="hero"
     >
       {init && mode === 'dark' && (
         <Particles
@@ -147,8 +147,8 @@ const Hero = () => {
                 fontSize: '56px !important',
               }}
             >
-              Transforming Technology Solutions for your{' '}
-              <Typography
+              Transforming Technology Solutions for your Business.
+              {/* <Typography
                 color={'primary'}
                 component={'span'}
                 variant={'inherit'}
@@ -160,7 +160,7 @@ const Hero = () => {
                 }}
               >
                 Business.
-              </Typography>
+              </Typography> */}
             </Typography>
             <Typography
               variant="h6"
@@ -184,7 +184,7 @@ const Hero = () => {
                 color="primary"
                 size="large"
                 fullWidth={isMd ? false : true}
-                href={'/home'}
+                href={'#more'}
               >
                 Learn More
               </Button>
@@ -193,16 +193,16 @@ const Hero = () => {
                 marginLeft={{ sm: 2 }}
                 width={{ xs: '100%', md: 'auto' }}
               >
-                <Button
-                  component={'a'}
-                  href={'/docs/introduction'}
-                  variant="outlined"
-                  color="primary"
-                  size="large"
-                  fullWidth={isMd ? false : true}
-                >
-                  Contact us
-                </Button>
+                <Link href={'/contact-page'}>
+                  <Button
+                    variant="outlined"
+                    color="primary"
+                    size="large"
+                    fullWidth={isMd ? false : true}
+                  >
+                    Contact us
+                  </Button>
+                </Link>
               </Box>
             </Box>
           </Box>
@@ -225,6 +225,13 @@ const Hero = () => {
           d="M0,0c0,0,934.4,93.4,1920,0v100.1H0L0,0z"
         ></path>
       </Box>
+      <section
+        id="more"
+        style={{
+          position: 'absolute',
+          top: '80vh',
+        }}
+      ></section>
     </Box>
   );
 };
